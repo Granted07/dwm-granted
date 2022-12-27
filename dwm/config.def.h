@@ -11,7 +11,7 @@ static const int systraypinningfailfirst = 1;   /* 1: if pinning fails, display 
 static const int showsystray        = 1;     /* 0 means no systray */
 static const int showbar            = 1;     /* 0 means no bar */
 static const int topbar             = 1;     /* 0 means bottom bar */
-static const char *fonts[]          = { "Quicksand:size=12","Noto Sans JP:size=10","SauceCodePro Nerd Font Mono:size=20","Material Icons:pixelsize=15;5","SHINJI BLUES:pixelsize=15;5", "EmojiOne:size=21", "Togalite:pixelsize=12;4"};
+static const char *fonts[]          = { "Quicksand:size=12","Noto Sans JP:size=10","SauceCodePro Nerd Font Mono:size=20","Material Icons:pixelsize=15;5","SHINJI BLUES:pixelsize=15;5", "EmojiOne:pixelsize=12;4", "Togalite:pixelsize=12;4"};
 static const char dmenufont[]       = "Quicksand:size=12";
 //background color
 static const char fg1[]       = "#BCCDEB";
