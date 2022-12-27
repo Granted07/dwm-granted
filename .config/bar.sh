@@ -1,7 +1,5 @@
 #!/bin/sh
 
-
-
 usbmon() {
 
 	usb1=$(lsblk -la | awk '/sdc1/ { print $1 }')
@@ -187,6 +185,13 @@ volume_alsa() {
 
 }
 
+weather() {
+
+	wea=$(curl wttr.in/Kolkata?format=1)
+	echo "$wea"
+
+}
+
 
 
 clock() {
@@ -195,7 +200,7 @@ clock() {
 
 	time=$(date +"%H:%M")
 
-	echo "[DATE $dte]  [ $time]"
+	echo "DATE $dte   |    $time"
 
 }
 
@@ -205,7 +210,7 @@ main() {
 
 	while true; do
 
-		xsetroot -name "[DISK $(fsmon)]  [RAM $(ram)]  [CPU $(cpu)]  $(clock) [$(battery)] $(volume_pa)"
+		xsetroot -name "$(weather)  |   DISK $(fsmon)  |   RAM $(ram)   |   CPU $(cpu)   |   $(clock)   |   $(battery)   |   $(volume_pa)"
 		sleep 0.5
 
 	done
