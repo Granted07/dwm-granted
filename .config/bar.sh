@@ -242,7 +242,7 @@ clock() {
 
 	time=$(date +"%H:%M")
 
-	echo "DATE $dte  |   $time"
+	echo "🗓 $dte  |   $time"
 
 }
 
