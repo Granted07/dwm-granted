@@ -39,6 +39,9 @@ XF86AudioMute
 
 XF86Audio{Next,Prev,Play,Stop}
     playerctl --all-players {next,previous,play-pause,stop}
+	
+XF86MonBrightnessUp
+	brightnessctl 5%+
 
-super + shift + Escape
-	poweroff poweroff > /home/granted/Desktop/lol.txt 2>&1
+XF86MonBrightnessDown
+	brightnessctl 5%-
